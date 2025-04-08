@@ -1,9 +1,0 @@
-[2025-04-06 01:56:19] DB_Error:
-            SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-[2025-04-06 01:57:54] DB_Error:
-            SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-[2025-04-07 20:33:56] Error: Undefined variable $s
-File:
-        C:\OSPnew\home\frame\app\Controllers\UserController.php
-Line: 12
-===
