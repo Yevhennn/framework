@@ -49,7 +49,7 @@ function get_alerts(): void
     }
 }
 
-function get_errors($fieldname): string
+function get_errors(string $fieldname): string
 {
     $output = '';
     $errors = session()->get('form_errors');
@@ -63,7 +63,7 @@ function get_errors($fieldname): string
     return $output;
 }
 
-function get_validation_class($fieldname): string
+function get_validation_class(string $fieldname): string
 {
     $errors = session()->get('form_errors');
     if(empty($errors)){
@@ -73,12 +73,12 @@ function get_validation_class($fieldname): string
     return isset($errors[$fieldname]) ? 'is-invalid' : 'is-valid';
 }
 
-function old($fieldname): string
+function old( string $fieldname): string
 {
     return isset(session()->get('form_data')[$fieldname]) ? h(session()->get('form_data')[$fieldname]) : '';
 }
 
-function h($str): string
+function h( string $str): string
 {
     return htmlspecialchars($str, ENT_QUOTES);
 }

@@ -12,5 +12,3 @@ $app->router->get('/register', [UserController::class, 'register']);
 $app->router->post('/register', [UserController::class, 'store']);
 $app->router->get('/login', [UserController::class, 'login']);
 
-
-//dump($app->router->getRoutes());
